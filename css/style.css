@@ -1,0 +1,85 @@
+@import;
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway";
+}
+
+nav {
+  display: flex;
+  margin: 0 100px;
+  /* padding: 10px 0; */
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  justify-content: right;
+}
+
+nav li {
+  list-style-type: none;
+  margin: 0 5px;
+  padding: 10px;
+  border-top: 5px solid rgba(255, 255, 255, 0);
+  color: #240754fd;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+nav li:hover {
+  border-top: 5px solid #240754;
+  cursor: pointer;
+}
+
+nav button {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f86a6a;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+nav button:hover {
+  /* filter: drop-shadow(0px 0px 20px yellow); */
+}
+
+.banner {
+  height: 995px;
+  background: url("/img/park_banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner h1 {
+  padding: 10% 0 10px;
+  font-weight: 800;
+  font-size: 64px;
+  text-align: center;
+  color: #fff;
+  filter: drop-shadow(5px 5px 2px gray);
+}
+
+.banner h2 {
+  font-weight: 800;
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  filter: drop-shadow(5px 5px 2px gray);
+}
