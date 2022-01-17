@@ -1,2 +1,1 @@
-# nonanomalous.github.io
-CM1040 submission
+# CM1040 submission
