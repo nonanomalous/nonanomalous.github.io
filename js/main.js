@@ -1,6 +1,3 @@
-var img = new Image();
-img.src = "img/park_map.png";
-
 const legend_items = {
   A: {
     name: "The Madhouse",
@@ -86,3 +83,7 @@ document.querySelectorAll(".legend li").forEach((el) => {
   });
   el.addEventListener("mouseout", draw);
 });
+
+var img = new Image();
+img.onload = draw;
+img.src = "img/park_map.png";
