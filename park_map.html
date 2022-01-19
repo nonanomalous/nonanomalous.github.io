@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <title>[[Park Name]] Theme Park</title>
+  </head>
+  <body>
+    <nav>
+      <a href=""><img src="img/logo.png" alt="LOGO" /></a>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rides.html">Rides & Attractions</a></li>
+          <li><a href="park_map.html">Park Map</a></li>
+        </ul>
+        <button>Book Now!</button>
+      </div>
+    </nav>
+    <div class="map">
+      <h3>Park Map</h3>
+      <div class="border"></div>
+      <canvas id="map">
+        <img src="img/park_map.png" alt="Park Map" />
+      </canvas>
+    </div>
+    <div class="legend">
+      <h3>Legend</h3>
+      <div class="border"></div>
+      <ul>
+        <li>
+          <span class="maplabel">A</span>
+          The Madhouse
+        </li>
+        <li>
+          <span class="maplabel">B</span>
+          Racetrack
+        </li>
+        <li>
+          <span class="maplabel">C</span>
+          Alien Encounter
+        </li>
+        <li>
+          <span class="maplabel">D</span>
+          The Theatre
+        </li>
+        <li>
+          <span class="maplabel">E</span>
+          Jungle Adventure
+        </li>
+        <li>
+          <span class="maplabel">F</span>
+          Roller Coaster
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

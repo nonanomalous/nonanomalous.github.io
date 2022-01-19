@@ -9,6 +9,10 @@
   font-family: "Raleway";
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   display: flex;
   margin: 0 100px;
@@ -65,19 +69,80 @@ nav button:hover {
   background-position: center;
 }
 
-.banner h1 {
-  padding: 10% 0 10px;
+h1,
+h2 {
   font-weight: 800;
-  font-size: 64px;
   text-align: center;
   color: #fff;
   filter: drop-shadow(0px 0px 4px #00000080);
 }
 
-.banner h2 {
+h1 {
+  padding: 10% 0 10px;
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
   font-weight: 800;
   font-size: 36px;
   text-align: center;
-  color: #fff;
-  filter: drop-shadow(0px 0px 4px #00000080);
+  color: #240754;
+}
+
+.map,
+.legend {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 20px;
+}
+
+.border {
+  margin: 10px 0 20px;
+  border: 1px solid #653cad;
+}
+
+.map {
+  margin: 0 5% 0;
+  width: 60%;
+}
+
+.legend {
+  width: 25%;
+}
+
+.maplabel {
+  display: inline-block;
+  margin: 0 15px;
+  width: 1.3em;
+  height: 1.3em;
+  line-height: 1.3em;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: center;
+  background-color: #ef4e4e;
+  color: white;
+}
+
+.legend li {
+  list-style-type: none;
+  margin: 10px 5px;
+  vertical-align: center;
+  padding: 10px 0;
+  background-color: #eae2f8;
+  color: #724bb7;
+  font-weight: 800;
+  font-size: 24px;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px #00000080;
+}
+
+.legend li:hover {
+  background-color: #a081d9;
+  color: white;
+  cursor: pointer;
+  box-shadow: 10px 5px 5px #00000080, 10px 5px 5px #ffff0050;
 }
