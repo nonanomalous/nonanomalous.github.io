@@ -9,59 +9,58 @@
   font-family: "Raleway";
 }
 
-a {
-  text-decoration: none;
-}
-
-nav {
+.header {
   display: flex;
-  margin: 0 100px;
+  margin: 0 150px;
   height: 85px;
   justify-content: space-between;
-  align-items: center;
 }
-nav ul {
+
+.header ul {
   display: flex;
   align-items: center;
 }
 
-.right {
+.nav {
   display: flex;
   justify-content: right;
 }
 
-nav li {
+.header li {
   list-style-type: none;
-  margin: 0 5px;
-  padding: 10px;
-  border-top: 5px solid rgba(255, 255, 255, 0);
-  color: #240754fd;
-  font-weight: 600;
+  padding: 0 20px;
+  margin: 0 40px;
+  height: 85px;
+  align-items: center;
+  display: flex;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #240754;
   font-size: 18px;
+  font-weight: 600;
+  height: 85px;
+  padding-top: 65px;
 }
 
-nav li:hover {
-  border-top: 5px solid #240754;
-  cursor: pointer;
+ul :hover {
+  box-shadow: 0 10px inset #240754;
 }
 
-nav button {
-  margin-left: 10px;
-  padding: 10px;
+.nav_button {
+  margin: 15px 0px 15px 40px;
+  padding: 15px;
   border-radius: 5px;
   background-color: #f86a6a;
   color: #fff;
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
   font-weight: 600;
-  cursor: pointer;
-  border: none;
+  text-decoration: none;
 }
 
-nav button:hover {
-  /* filter: drop-shadow(0px 0px 20px yellow); */
-}
-
-.banner {
+.hero {
   height: 995px;
   background: url("/img/park_banner.png");
   background-size: cover;
@@ -69,20 +68,20 @@ nav button:hover {
   background-position: center;
 }
 
-h1,
-h2 {
+.hero__text__large,
+.hero__text__small {
   font-weight: 800;
   text-align: center;
   color: #fff;
   filter: drop-shadow(0px 0px 4px #00000080);
 }
 
-h1 {
+.hero__text__large {
   padding: 10% 0 10px;
   font-size: 64px;
 }
 
-h2 {
+.hero__text__small {
   font-size: 36px;
 }
 
