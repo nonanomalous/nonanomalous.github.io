@@ -50,6 +50,20 @@
   padding-top: 65px;
 }
 
+.footnav{
+  display: flex;
+  justify-content: left;
+}
+.foot_link {
+  text-decoration: none;
+  color: #240754;
+  font-size: 16px;
+  font-weight: 600;
+  height: 85px;
+  padding: 0 10px;
+    
+}
+
 ul :hover {
   box-shadow: 0 10px inset #240754;
 }
@@ -90,8 +104,23 @@ ul :hover {
 .hero__text__small {
   font-size: 36px;
 }
+h1 {
+  padding: 0 0 5px;
+  font-weight: 800;
+  font-size: 44px;
+  text-align: center;
+  color: #240754;
+}
+h2 {
+  font-weight: 800;
+  font-size: 28px;
+  text-align: center;
+  color: #240754;
+}
+
 
 h3 {
+  padding: 0 0 5px;
   font-weight: 800;
   font-size: 36px;
   text-align: center;
@@ -151,3 +180,111 @@ h3 {
   cursor: pointer;
   box-shadow: 10px 5px 5px #00000080, 10px 5px 5px #ffff0050;
 }
+
+.ridesNavigationImage {
+  width: 420px;
+  height: 525px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.ridesImage {
+  width: 420px;
+  height: 525px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.freeSpaceImage {
+  width: 420px;
+  height: 320px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+.container {
+  vertical-align: center;
+  margin: 2% 2% 2%;
+  padding: 2% 0px;  
+  text-align: center;
+  background-color: white;
+  box-shadow: 10px 5px 5px #00000080;
+  outline: solid #a081d9; 
+  border-radius: 30px;   
+}
+
+.container2 {
+  vertical-align: center;
+  padding:3%;
+  margin: 5% 5%;  
+  text-align: center;
+  background-color: white;
+  border-radius: 30px; 
+  font-size: 28px;
+  font-weight: 500;
+  color: #240754;
+}
+
+.container3 {
+  vertical-align: center;
+  padding: 3%;
+  margin: 10% 0;  
+  text-align: left;
+  background-color: white;
+  border-radius: 30px; 
+  font-size: 28px;
+  font-weight: 500;
+  color: #240754;
+}
+
+.orangeBackground {
+    background: rgba(248, 106, 106, 0.2);
+}
+
+.violetBackground {
+    background: rgba(114, 75, 183, 0.2);
+}
+
+.roundedCorners70 {
+  border-radius: 70px
+}
+
+.column {
+  margin: 0px 0px 0px;
+  float: left;
+  vertical-align: center;
+  width: 33.33%;
+    
+}
+
+.column2 {
+  float: left;
+  vertical-align: center;
+  width: 25%;
+  padding: 0 0 5%;
+    
+}
+
+.column3 {
+  float: left;
+  vertical-align: center;
+  width: 50%;
+  padding: 0 0 5%;
+    
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: flex;
+}
+
+.triangleRight {
+  float: left;
+  margin-left: 15px;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 30px solid #240754;
+  border-bottom: 15px solid transparent;
+}
+
