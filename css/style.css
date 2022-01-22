@@ -9,6 +9,11 @@
   font-family: "Raleway";
 }
 
+body {
+  background-color: #F5F5F5;
+  color: #240754;
+}
+
 a {
   text-decoration: none;
 }
@@ -19,6 +24,7 @@ nav {
   height: 85px;
   justify-content: space-between;
   align-items: center;
+  background-color: #FFFFFF;
 }
 nav ul {
   display: flex;
@@ -146,3 +152,47 @@ h3 {
   cursor: pointer;
   box-shadow: 10px 5px 5px #00000080, 10px 5px 5px #ffff0050;
 }
+
+img.roundedCorners70 {
+  border-radius: 70px
+}
+
+.orangeShadow {
+
+}
+
+.violetShadow {
+
+}
+
+.whiteBackground {
+  background-color: #FFFFFF;
+}
+
+.ridesNavigationImage {
+  width: 420px;
+  height: 525px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 50%
+}
+
+.triangleRight {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 12px solid #FFD700;
+  border-bottom: 10px solid transparent;
+}
+/* idea taken from here:
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_triangle-right */
+
+#rollerCoasterImageContainer {
+  background-image: url("img/rides/rollerCoaster.jpg");
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 50%
+}
+
