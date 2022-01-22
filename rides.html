@@ -8,7 +8,7 @@
           href="css/style.css"
     />
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
-    <title>[[Park Name]] Theme Park</title>
+    <title>Violet Hill Coaster Park</title>
   </head>
 
   <body>
@@ -20,16 +20,23 @@
       <div class="nav">
         <ul>
           <li class="nav_link_container">
-            <a class="nav_link" href="#">Home</a>
+            <a class="nav_link" href="/index.html">Home</a>
           </li>
           <li class="nav_link_container">
-            <a class="nav_link" href="#">Tickets</a>
+            <a class="nav_link" href="#" onclick="alert('Under Construction')"
+              >Tickets</a
+            >
           </li>
           <li class="nav_link_container">
-            <a class="nav_link" href="#">Park Map</a>
+            <a class="nav_link" href="/rides.html">Rides & Attractions</a>
           </li>
           <li class="nav_link_container">
-            <a class="nav_link" href="#">Contact Us</a>
+            <a class="nav_link" href="/park_map.html">Park Map</a>
+          </li>
+          <li class="nav_link_container">
+            <a class="nav_link" href="#" onclick="alert('Under Construction')"
+              >Contact Us</a
+            >
           </li>
         </ul>
         <a class="nav_button" href="#">Book Now!</a>
@@ -72,28 +79,44 @@
 
           <!-- to use the images as the background in the container cells, delete the img tag and use the appropriate background style code in the CSS-->
           <div class="column">
-            <h2>Attractions</h2>
+            <a class="attractions" href="#ATTRACTIONS">Attractions</a>
             <center>
               <!--replace width/height properties with CSS later-->
             <img src="img/rides/navigationAttractions.jpg"
             class="ridesNavigationImage"> 
+            <div class="attractions_nav">
+               <a class="castle" href="#castleID">Castle Playground</a>
+               <a class="fountain" href="#fountainID">Fountain Complex</a>
+               <a class="ring" href="#ringID">Ring Toss</a>
+               <a class="balloon" href="#balloonID">Balloon Darts</a>
+            </div>
             </center>
           </div>
           <div class="column">
-            <h2>Rides</h2>
+            <a class="rides" href="#RIDES">Rides</a>
             <center>
               <!--replace width/height properties with CSS later-->
             <img src="img/rides/navigationRides.jpg"
             class="ridesNavigationImage">
+            <div class="ride_nav">
+               <a class="coaster" href="#coasterID">Roller Coaster</a>
+               <a class="topSpin" href="#topSpinID">Top Spin</a>
+               <a class="enterprise" href="#enterpriseID">Enterprise</a>
+               <a class="swing" href="#swingID">Swing Carousel</a>
+            </div>
             </center>
           </div>
 
           <div class="column">
-            <h2>Free Space</h2>
+            <a class="freeSpace" href="#FREE_SPACE">Free Space</a>
             <center>
               <!--replace width/height properties with CSS later-->
             <img src="img/rides/navigationFreeSpace.jpeg"
             class="ridesNavigationImage">
+            <div class="free_nav">
+               <a class="picnic" href="#picnicID">Picnic and BBQ Zones</a>
+               <a class="arbor" href="#arborID">Arboretum</a>
+            </div>
             </center>
           </div>
         </div>
@@ -129,7 +152,7 @@
             height="400">
             </center>
           </div>
-          <div class="column2">
+          <div id="coasterID" class="column2">
             <h3>Roller Coaster</h3>
             <div class="row  container2 violetBackground">
               <dl>
@@ -194,7 +217,7 @@
             </center>
           </div>
 
-          <div class="column2">
+          <div id="topSpinID" class="column2">
             <h3>Top Spin</h3>
             <div class="row container2 violetBackground">
               <dl>
@@ -268,7 +291,7 @@
             </center>
           </div>
 
-          <div class="column2">
+          <div id="enterpriseID" class="column2">
             <h3>Enterprise</h3>
             <div class="row container2 violetBackground" class="orangeBackground">
               <dl>
@@ -331,7 +354,7 @@
             </center>
           </div>
 
-          <div class="column2">
+          <div id="swingID" class="column2">
             <h3>Swing Carousel</h3>
             <div class="row container2 violetBackground">
               <dl>
@@ -418,7 +441,7 @@
             </center>
           </div>
 
-          <div class="column2">
+          <div id="castleID" class="column2">
             <h3>Castle Playground</h3>
             <div class="row container2 violetBackground">
               <dl>
@@ -444,7 +467,7 @@
             </center>
           </div>
 
-          <div class="column2">
+          <div id="fountainID" class="column2">
             <h3>Fountain Complex</h3>
             <div class="row container2 orangeBackground">
               <p>The complex features:</p>
@@ -488,7 +511,7 @@
             </center>
           </div>
 
-          <div class="column2">
+          <div id="ringID" class="column2">
             <h3>Ring Toss</h3>
             <div class="row container2 orangeBackground">
               <div class="col-md-4" class="priceCell">
@@ -512,7 +535,7 @@
             </center>
           </div>
 
-          <div class="column2">
+          <div id="balloonID" class="column2">
             <h3>Balloon Darts</h3>
             <div class="row container2 violetBackground">
               <div class="col-md-4" class="priceCell">
@@ -545,7 +568,7 @@
           <h3>FREE SPACE</h3>
         </div>
 
-        <div class="row">
+        <div id="picnicID" class="row">
 
           <div class="column">
             <!-- change as abowe to the background image later-->
@@ -574,7 +597,7 @@
           <p></p>
         </div>
 
-        <div class="row">
+        <div id="arborID" class="row">
 
           <div class="column">
             <!-- change as abowe to the background image later-->
@@ -600,40 +623,50 @@
       </div>
     </div>
 
-    <footnav class="footnav">
-     <a class="header_logo" href=""
-        ><img src="img/logo.png" alt="LOGO" height="60px"
-      /></a>
-      <div class="foot">
-        <dl>
+    <footer class="footnav">      
+      <dl>
+        <li class="foot_link_container">
+          <a class="foot_link" href="#" onclick="alert('Under Construction')">Terms of Use</a>
+        </li>
+        <li class="foot_link_container">
+          <a class="foot_link" href="#" onclick="alert('Under Construction')">Park Rules</a>
+        </li>
+        <li class="foot_link_container">
+          <a class="foot_link" href="#" onclick="alert('Under Construction')">FAQs</a>
+        </li>
+        <li class="foot_link_container">
+          <a class="foot_link" href="#" onclick="alert('Under Construction')">Contact Us</a>
+        </li>
+        <div class="break"></div>
+        <li class="foot_link_container">
+            <a class="foot_link" href="#" onclick="alert('Under Construction')">Privacy Policy</a>
+        </li>
           <li class="foot_link_container">
-            <a class="foot_link" href="#">Terms of Use</a>
-          </li>
+            <a class="foot_link" href="#" onclick="alert('Under Construction')">Accessibility</a>
+        </li>
           <li class="foot_link_container">
-            <a class="foot_link" href="#">Park Rules</a>
-          </li>
+            <a class="foot_link" href="/park_map.html">Park Map</a>
+        </li>
           <li class="foot_link_container">
-            <a class="foot_link" href="#">FAQs</a>
-          </li>
-          <li class="foot_link_container">
-            <a class="foot_link" href="#">Contact Us</a>
-          </li>
-          <li class="foot_link_container">
-             <a class="foot_link" href="#">Privacy Policy</a>
-          </li>
-            <li class="foot_link_container">
-             <a class="foot_link" href="#">Accessibility</a>
-          </li>
-            <li class="foot_link_container">
-             <a class="foot_link" href="#">Park Map</a>
-          </li>
-            <li class="foot_link_container">
-             <a class="foot_link" href="#">Bookings</a>
-          </li>
-        </dl>
-       
+            <a class="foot_link" href="#" onclick="alert('Under Construction')">Bookings</a>
+        </li>
+      </dl>
+      <div class="footer__end">
+        <a class="header_logo" href="/index.html"><img src="img/logo.png" alt="LOGO" height="60px" /></a>
+        <div class="socialContainer">
+          <div class="socialIcon">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </div>
+          <div class="socialIcon">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </div>
+          <div class="socialIcon">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </div>
+        </div>
       </div>
-    </footnav>
-
+    </footer>
   </body>
 </html>
+
+
