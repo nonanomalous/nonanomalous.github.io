@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="css/bootstrap.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>[[Park Name]] Theme Park</title>
   </head>
+  
   <body>
+    
     <nav>
       <a href=""><img src="img/logo.png" alt="LOGO" /></a>
       <div class="right">
@@ -19,8 +25,642 @@
         <button>Book Now!</button>
       </div>
     </nav>
-    <div class="banner">
-      <h1>Rides</h1>
+    
+    <header class="banner">
+      <h1>Rides & Attractions</h1>
+    </header>
+  
+    
+        <div>
+      <!--make round corners in CSS for the image: img.roundedCorners70: {border-radius: 70px}-->
+      <center>
+      <img src="img/rides/header_image.png" alt="Header image" width="835" height="245" class="roundedCorners70" id="ridesHeaderImage">
+      </center>
+      <!-- probably want to put the image into the container and use as the background in CSS -->
     </div>
+
+    <div class="row">
+      <!-- space -->
+      <p></p>
+    </div>
+
+    <!-- PAGE NAVIGATION BLOCK -->
+
+    <div id="PAGE_NAVIGATION" class="violetShadow" class="whiteBackground">
+      <div class="container">
+        <div class="row">
+          <!-- CSS properties for ridesNavigationImages:
+          width: 420;
+          height: 525;
+          border-radius: 30px;
+          object-fit: cover;
+          object-position: x-axis% y-axis%
+          -->
+          <!--
+          the decision is taken from:
+          https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit
+          -->
+
+          <!-- to use the images as the background in the container cells, delete the img tag and use the appropriate background style code in the CSS-->
+          <div class="col-md-4">
+            <h2>Attractions</h2>
+            <center>
+              <!--replace width/height properties with CSS later-->
+            <img src="img/rides/navigationAttractions.jpg"
+            class="ridesNavigationImage"
+            width="420"
+            height="525">
+            </center>
+          </div>
+          <div class="col-md-4">
+            <h2>Rides</h2>
+            <center>
+              <!--replace width/height properties with CSS later-->
+            <img src="img/rides/navigationRides.jpg"
+            class="ridesNavigationImage"
+            width="420"
+            height="525">
+            </center>
+          </div>
+
+          <div class="col-md-4">
+            <h2>Free Space</h2>
+            <center>
+              <!--replace width/height properties with CSS later-->
+            <img src="img/rides/navigationFreeSpace.jpeg"
+            class="ridesNavigationImage"
+            width="420"
+            height="525">
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- space -->
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+
+    <!-- same with images and background for cells - move to CSS as well as width/height properties and <center> tags-->
+
+    <!-- RIDES BLOCK -->
+
+    <div id="RIDES" class="orangeShadow" class="whiteBackground">
+      <div class="container">
+
+        <div class="row">
+          <h2>RIDES</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-3">
+            <center>
+              <!--replace width/height properties with CSS later-->
+            <img src="img/rides/rollerCoaster.jpg"
+            class="ridesImage"
+            width="300"
+            height="400">
+            </center>
+          </div>
+
+          <div class="col-md-3">
+            <h3>Roller Coaster</h3>
+            <div class="row" class="violetBackground">
+              <dl>
+                <dt>Peak G-Force:</dt><dd>6.3g</dd>
+              </dl>
+              <dl>
+                <dt>Top Speed:</dt><dd>95mph</dd>
+              </dl>
+              <dl>
+                <dt>Max Height:</dt><dd>34m</dd>
+              </dl>
+              <dl>
+                <dt># of Inversions:</dt><dd>3</dd>
+              </dl>
+            </div>
+            <div class="row" class="orangeBackground">
+              <div class="col-md-4" class="heightCell">
+                Height:
+              </div>
+              <div class="col-md-4" class="heightNumberCell">
+                140
+              </div>
+              <div class="col-md-4" class="heightCell">
+                cm+
+              </div>
+            </div>
+            <div class="row" class="violetBackground">
+              <div class="col-md-6" class="ageCell">
+                Age:
+              </div>
+              <div class="col-md-6" class="ageNumberCell">
+                9+
+              </div>
+            </div>
+            <div class="row" class="orangeBackground">
+              <div class="col-md-6" class="intensityCell">
+                Intensity:
+              </div>
+              <div class="col-md-6" class="intensityShapesCell">
+                <!--to make trianles shape use in CSS sth like that:
+                .triangleRight {
+              	width: 0;
+              	height: 0;
+              	border-top: 25px solid transparent;
+              	border-left: 50px solid #555;
+              	border-bottom: 25px solid transparent;
+                }
+                + don't forget to add colour
+                -->
+                <!-- idea taken from here:
+                https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_triangle-right
+                -->
+                <div class="row">
+                <div class="triangleRight"></div>
+                <div class="triangleRight"></div>
+                <div class="triangleRight"></div>
+                <div class="triangleRight"></div>
+                <div class="triangleRight"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <center>
+              <!--replace width/height properties with CSS later-->
+            <img src="img/rides/topSpin.jpg"
+            class="ridesImage"
+            width="300"
+            height="400">
+            </center>
+          </div>
+
+          <div class="col-md-3">
+            <h3>Top Spin</h3>
+            <div class="row" class="orangeBackground">
+              <dl>
+                <dt>Peak G-Force:</dt><dd>4.3g</dd>
+              </dl>
+              <dl>
+                <dt>Top Speed:</dt><dd>13rpm</dd>
+              </dl>
+              <dl>
+                <dt>Max Height:</dt><dd>24m</dd>
+              </dl>
+              <dl>
+                <dt># of Rotations:</dt><dd>15</dd>
+              </dl>
+            </div>
+            <div class="row" class="violetBackground">
+              <div class="col-md-4" class="heightCell">
+                Height:
+              </div>
+              <div class="col-md-4" class="heightNumberCell">
+                140-197
+              </div>
+              <div class="col-md-4" class="heightCell">
+                cm
+              </div>
+            </div>
+            <div class="row" class="orangeBackground">
+              <div class="col-md-6" class="ageCell">
+                Age:
+              </div>
+              <div class="col-md-6" class="ageNumberCell">
+                9+
+              </div>
+            </div>
+            <div class="row" class="violetBackground">
+              <div class="col-md-6" class="intensityCell">
+                Intensity:
+              </div>
+              <div class="col-md-6" class="intensityShapesCell">
+                <!--to make trianles shape use in CSS sth like that:
+                .triangleRight {
+                width: 0;
+                height: 0;
+                border-top: 25px solid transparent;
+                border-left: 50px solid #555;
+                border-bottom: 25px solid transparent;
+                }
+                + don't forget to add colour
+                -->
+                <!-- idea taken from here:
+                https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_triangle-right
+                -->
+                <div class="row">
+                <div class="triangleRight"></div>
+                <div class="triangleRight"></div>
+                <div class="triangleRight"></div>
+                <div class="triangleRight"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <!-- space -->
+          <p></p>
+          <p></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-3">
+            <center>
+              <!--replace width/height properties with CSS later-->
+            <img src="img/rides/enterprise.jpg"
+            class="ridesImage"
+            width="300"
+            height="400">
+            </center>
+          </div>
+
+          <div class="col-md-3">
+            <h3>Enterprise</h3>
+            <div class="row" class="orangeBackground">
+              <dl>
+                <dt>Peak G-Force:</dt><dd>3g</dd>
+              </dl>
+              <dl>
+                <dt>Revolution Time:</dt><dd>4.5s</dd>
+              </dl>
+              <dl>
+                <dt>Max Height:</dt><dd>18m</dd>
+              </dl>
+              <dl>
+                <dt>Max Angle:</dt><dd>90deg</dd>
+              </dl>
+            </div>
+            <div class="row" class="violetBackground">
+              <div class="col-md-4" class="heightCell">
+                Height:
+              </div>
+              <div class="col-md-4" class="heightNumberCell">
+                140
+              </div>
+              <div class="col-md-4" class="heightCell">
+                cm+
+              </div>
+            </div>
+            <div class="row" class="orangeBackground">
+              <div class="col-md-6" class="ageCell">
+                Age:
+              </div>
+              <div class="col-md-6" class="ageNumberCell">
+                8+
+              </div>
+            </div>
+            <div class="row" class="violetBackground">
+              <div class="col-md-6" class="intensityCell">
+                Intensity:
+              </div>
+              <div class="col-md-6" class="intensityShapesCell">
+                <!--to make trianles shape use in CSS sth like that:
+                .triangleRight {
+                width: 0;
+                height: 0;
+                border-top: 25px solid transparent;
+                border-left: 50px solid #555;
+                border-bottom: 25px solid transparent;
+                }
+                + don't forget to add colour
+                -->
+                <!-- idea taken from here:
+                https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_triangle-right
+                -->
+                <div class="row">
+                <div class="triangleRight"></div>
+                <div class="triangleRight"></div>
+                <div class="triangleRight"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <center>
+              <!--replace width/height properties with CSS later-->
+            <img src="img/rides/swing.jpg"
+            class="ridesImage"
+            width="300"
+            height="400">
+            </center>
+          </div>
+
+          <div class="col-md-3">
+            <h3>Swing Carousel</h3>
+            <div class="row" class="violetBackground">
+              <dl>
+                <dt>Peak G-Force:</dt><dd>1g</dd>
+              </dl>
+              <dl>
+                <dt>Top Speed:</dt><dd>37mph</dd>
+              </dl>
+              <dl>
+                <dt>Max Height:</dt><dd>15m</dd>
+              </dl>
+              <dl>
+                <dt>Max Angle:</dt><dd>75deg</dd>
+              </dl>
+            </div>
+            <div class="row" class="orangeBackground">
+              <div class="col-md-4" class="heightCell">
+                Height:
+              </div>
+              <div class="col-md-4" class="heightNumberCell">
+                140
+              </div>
+              <div class="col-md-4" class="heightCell">
+                cm+
+              </div>
+            </div>
+            <div class="row" class="violetBackground">
+              <div class="col-md-6" class="ageCell">
+                Age:
+              </div>
+              <div class="col-md-6" class="ageNumberCell">
+                8+
+              </div>
+            </div>
+            <div class="row" class="orangeBackground">
+              <div class="col-md-6" class="intensityCell">
+                Intensity:
+              </div>
+              <div class="col-md-6" class="intensityShapesCell">
+                <!--to make trianles shape use in CSS sth like that:
+                .triangleRight {
+                width: 0;
+                height: 0;
+                border-top: 25px solid transparent;
+                border-left: 50px solid #555;
+                border-bottom: 25px solid transparent;
+                }
+                + don't forget to add colour
+                -->
+                <!-- idea taken from here:
+                https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_triangle-right
+                -->
+                <div class="row">
+                <div class="triangleRight"></div>
+                <div class="triangleRight"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- space -->
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+
+    <!-- same with images and background for cells - move to CSS as well as width/height properties and <center> tags-->
+
+    <!-- ATTRACTIONS BLOCK -->
+
+    <div id="ATTRACTIONS" class="violetShadow" class="whiteBackground">
+      <div class="container">
+
+        <div class="row">
+          <h2>ATTRACTIONS</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-3">
+            <center>
+              <!--replace width/height properties with CSS later-->
+            <img src="img/rides/castlePlayground.jpg"
+            class="ridesImage"
+            width="300"
+            height="400">
+            </center>
+          </div>
+
+          <div class="col-md-3">
+            <h3>Castle Playground</h3>
+            <div class="row" class="violetBackground">
+              <ul>
+                <li>The castle is eight stories high and almost entirely made of wood.</li>
+                <li>There are swings, slides and play places inside.</li>
+                <li>The adults are only permitted to accompany toddlers. </li>
+              </ul>
+            </div>
+            <div class="row" class="violetBackground">
+              <div class="col-md-6" class="ageCell">
+                Age:
+              </div>
+              <div class="col-md-6" class="ageNumberCell">
+                4+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <center>
+              <!--replace width/height properties with CSS later-->
+            <img src="img/rides/fountainComplex.jpg"
+            class="ridesImage"
+            width="300"
+            height="400">
+            </center>
+          </div>
+
+          <div class="col-md-3">
+            <h3>Fountain Complex</h3>
+            <div class="row">
+              <p>The complex features:</p>
+              <ul>
+                <li>a multilevel treehouse</li>
+                <li>climbing obstacles </li>
+                <li>ziplines </li>
+                <li>water fountains</li>
+                <li>swings</li>
+              </ul>
+            </div>
+            <div class="row"> <!--this wrapper is to place background image to the cell -->
+              <div class="row">
+                <div class="col-md-6" class="ageCell">
+                  Age:
+                </div>
+                <div class="col-md-6" class="ageNumberCell">
+                  4+
+                </div>
+                <div class="row">
+                  <p>Additional restrictions may depend on the activity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <!-- space -->
+          <p></p>
+          <p></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-3">
+            <center>
+              <!--replace width/height properties with CSS later-->
+            <img src="img/rides/ringToss.jpg"
+            class="ridesImage"
+            width="300"
+            height="400">
+            </center>
+          </div>
+
+          <div class="col-md-3">
+            <h3>Ring Toss</h3>
+            <div class="row">
+              <div class="col-md-4" class="priceCell">
+                Price:
+              </div>
+              <div class="col-md-4" class="priceNumberCell">
+                1£
+              </div>
+              <div class="col-md-4" class="priceCell">
+                / game
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6" class="ageCell">
+                Age:
+              </div>
+              <div class="col-md-6" class="ageNumberCell">
+                8+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <center>
+              <!--replace width/height properties with CSS later-->
+            <img src="img/rides/balloonDarts.jpg"
+            class="ridesImage"
+            width="300"
+            height="400">
+            </center>
+          </div>
+
+          <div class="col-md-3">
+            <h3>Balloon Darts</h3>
+            <div class="row">
+              <div class="col-md-4" class="priceCell">
+                Price:
+              </div>
+              <div class="col-md-4" class="priceNumberCell">
+                1£
+              </div>
+              <div class="col-md-4" class="priceCell">
+                / game
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6" class="ageCell">
+                Age:
+              </div>
+              <div class="col-md-6" class="ageNumberCell">
+                8+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- space -->
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+
+    <div id="FREE_SPACE" class="orangeShadow" class="whiteBackground">
+      <div class="container">
+
+        <div class="row">
+          <h2>FREE SPACE</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <!-- change as abowe to the background image later-->
+            <img src="img/rides/picnics.jpg"
+            width="420"
+            height="320"
+            >
+          </div>
+
+          <div class="col-md-8" class="violetBackground">
+            <div class="row">
+              <h3>Picnic and BBQ Zones<h3>
+            </div>
+            <div class="row">
+              <p>There are picnic shelters around the Park, or you can enjoy your picnic on one of the spacious lawns which overlook the rides.</p>
+              <p>Barbecues are allowed at special places around the Park.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <!-- space! -->
+          <p></p>
+          <p></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <!-- change as abowe to the background image later-->
+            <img src="img/rides/arboretum.jpg"
+            width="420"
+            height="320"
+            >
+          </div>
+
+          <div class="col-md-8" class="orangeBackground">
+            <div class="row">
+              <h3>Arboretum<h3>
+            </div>
+            <div class="row">
+              <p>There is a huge and beautiful arboretum in our Park, which holds more than 200 species of plants.</p>
+              <p>Roads in the arboretum are accessible to all visitors.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <!-- MAKE A FOOTER-->
+    </footer>
+
+    
+    
   </body>
 </html>
