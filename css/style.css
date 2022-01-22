@@ -235,6 +235,147 @@ h3 {
   font-weight: 500;
   color: #240754;
 }
+.rides {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 36px;
+  color: #240754; 
+}
+
+.attractions {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 36px;
+  color: #240754; 
+}
+
+.freeSpace {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 36px;
+  color: #240754; 
+}
+
+.coaster {
+  text-decoration: none;
+  display: flex;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+  position: absolute;
+  top: 65%;
+  left: 45.5%;
+  
+}
+
+.topSpin {
+  text-decoration: none;
+  display: flex;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+  position: absolute;
+  text-align: center;
+  top: 70%;
+  left: 47%;
+  
+}
+
+.enterprise {
+  text-decoration: none;
+  display: flex;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+  position: absolute;
+  top: 95%;
+  left: 46%;
+  
+}
+
+.swing {
+  text-decoration: none;
+  display: flex;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+  position: absolute;
+  top: 100%;
+  left: 44.5%;
+  
+}
+
+.picnic {
+  text-decoration: none;
+  display: flex;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+  position: absolute;
+  top: 60%;
+  left: 74.5%;
+  
+}
+
+.arbor {
+  text-decoration: none;
+  display: flex;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+  position: absolute;
+  top: 65%;
+  left: 78.2%;
+  
+}
+
+.castle {
+  text-decoration: none;
+  display: flex;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+  position: absolute;
+  top: 60%;
+  left: 12%;
+  
+}
+
+.fountain{
+  text-decoration: none;
+  display: flex;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+  position: absolute;
+  top: 65%;
+  left: 12%;
+  
+}
+.ring {
+  text-decoration: none;
+  display: flex;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  
+}
+
+.balloon {
+  text-decoration: none;
+  display: flex;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+  position: absolute;
+  top: 70%;
+  left: 18%;
+  
+}
+
 
 .orangeBackground {
     background: rgba(248, 106, 106, 0.2);
