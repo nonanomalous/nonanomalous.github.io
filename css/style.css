@@ -9,6 +9,10 @@
   font-family: "Raleway";
 }
 
+li {
+  list-style-type: none;
+}
+
 .header {
   display: flex;
   margin: 0 150px;
@@ -28,7 +32,6 @@
 }
 
 .header li {
-  list-style-type: none;
   padding: 0 20px;
   margin: 0 40px;
   height: 85px;
@@ -50,18 +53,17 @@
   padding-top: 65px;
 }
 
-.footnav{
-  display: flex;
+.footnav {
   justify-content: left;
+  margin-top: 50px;
 }
 .foot_link {
   text-decoration: none;
   color: #240754;
   font-size: 16px;
   font-weight: 600;
-  height: 85px;
+  /* height: 85px; */
   padding: 0 10px;
-    
 }
 
 ul :hover {
@@ -117,7 +119,6 @@ h2 {
   text-align: center;
   color: #240754;
 }
-
 
 h3 {
   padding: 0 0 5px;
@@ -204,21 +205,21 @@ h3 {
 .container {
   vertical-align: center;
   margin: 2% 2% 2%;
-  padding: 2% 0px;  
+  padding: 2% 0px;
   text-align: center;
   background-color: white;
   box-shadow: 10px 5px 5px #00000080;
-  outline: solid #a081d9; 
-  border-radius: 30px;   
+  outline: solid #a081d9;
+  border-radius: 30px;
 }
 
 .container2 {
   vertical-align: center;
-  padding:3%;
-  margin: 5% 5%;  
+  padding: 3%;
+  margin: 5% 5%;
   text-align: center;
   background-color: white;
-  border-radius: 30px; 
+  border-radius: 30px;
   font-size: 28px;
   font-weight: 500;
   color: #240754;
@@ -227,10 +228,10 @@ h3 {
 .container3 {
   vertical-align: center;
   padding: 3%;
-  margin: 10% 0;  
+  margin: 10% 0;
   text-align: left;
   background-color: white;
-  border-radius: 30px; 
+  border-radius: 30px;
   font-size: 28px;
   font-weight: 500;
   color: #240754;
@@ -239,21 +240,21 @@ h3 {
   text-decoration: none;
   font-weight: 600;
   font-size: 36px;
-  color: #240754; 
+  color: #240754;
 }
 
 .attractions {
   text-decoration: none;
   font-weight: 600;
   font-size: 36px;
-  color: #240754; 
+  color: #240754;
 }
 
 .freeSpace {
   text-decoration: none;
   font-weight: 600;
   font-size: 36px;
-  color: #240754; 
+  color: #240754;
 }
 
 .coaster {
@@ -265,7 +266,6 @@ h3 {
   position: absolute;
   top: 65%;
   left: 45.5%;
-  
 }
 
 .topSpin {
@@ -278,7 +278,6 @@ h3 {
   text-align: center;
   top: 70%;
   left: 47%;
-  
 }
 
 .enterprise {
@@ -290,7 +289,6 @@ h3 {
   position: absolute;
   top: 95%;
   left: 46%;
-  
 }
 
 .swing {
@@ -302,7 +300,6 @@ h3 {
   position: absolute;
   top: 100%;
   left: 44.5%;
-  
 }
 
 .picnic {
@@ -314,7 +311,6 @@ h3 {
   position: absolute;
   top: 60%;
   left: 74.5%;
-  
 }
 
 .arbor {
@@ -326,7 +322,6 @@ h3 {
   position: absolute;
   top: 65%;
   left: 78.2%;
-  
 }
 
 .castle {
@@ -338,10 +333,9 @@ h3 {
   position: absolute;
   top: 60%;
   left: 12%;
-  
 }
 
-.fountain{
+.fountain {
   text-decoration: none;
   display: flex;
   font-weight: 600;
@@ -350,7 +344,6 @@ h3 {
   position: absolute;
   top: 65%;
   left: 12%;
-  
 }
 .ring {
   text-decoration: none;
@@ -361,7 +354,6 @@ h3 {
   position: absolute;
   top: 70%;
   left: 10%;
-  
 }
 
 .balloon {
@@ -373,20 +365,18 @@ h3 {
   position: absolute;
   top: 70%;
   left: 18%;
-  
 }
 
-
 .orangeBackground {
-    background: rgba(248, 106, 106, 0.2);
+  background: rgba(248, 106, 106, 0.2);
 }
 
 .violetBackground {
-    background: rgba(114, 75, 183, 0.2);
+  background: rgba(114, 75, 183, 0.2);
 }
 
 .roundedCorners70 {
-  border-radius: 70px
+  border-radius: 70px;
 }
 
 .column {
@@ -394,7 +384,6 @@ h3 {
   float: left;
   vertical-align: center;
   width: 33.33%;
-    
 }
 
 .column2 {
@@ -402,7 +391,6 @@ h3 {
   vertical-align: center;
   width: 25%;
   padding: 0 0 5%;
-    
 }
 
 .column3 {
@@ -410,9 +398,7 @@ h3 {
   vertical-align: center;
   width: 50%;
   padding: 0 0 5%;
-    
 }
-
 
 .row::after {
   content: "";
@@ -429,3 +415,50 @@ h3 {
   border-bottom: 15px solid transparent;
 }
 
+.footnav dl {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 30% 0 100px;
+}
+
+.foot_link_container {
+  padding: 10px;
+  width: 200px;
+}
+
+.foot_link_container:hover {
+  background-color: #a081d9;
+}
+
+.footer__end {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 50px 75px;
+}
+
+.socialContainer {
+  display: flex;
+}
+
+.socialIcon {
+  margin: 0 20px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.socialIcon svg {
+  fill: #240754;
+}
+
+.socialIcon:hover {
+  background-color: #a081d9;
+  cursor: pointer;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
