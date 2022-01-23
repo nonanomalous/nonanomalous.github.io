@@ -1,6 +1,11 @@
 @font-face {
   font-family: "Raleway";
-  src: url("/fonts/Raleway-VariableFont_wght.ttf");
+  src: url("../fonts/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:url("../fonts/Roboto-Regular.ttf");
 }
 
 * {
@@ -239,8 +244,6 @@ h3 {
   position:relative;
   overflow:hidden;
   background-repeat:no-repeat;
-  background-size:cover;
-  /* background-position:50% */
 }
 
 #ridesHeaderImage {
@@ -252,15 +255,15 @@ h3 {
 }
 
 #attractionsImage {
-  /* background-image: url("../img/rides/navigationAttractions.jpg"); */
+  background-image: url("../img/rides/navigationAttractions.jpg");
   width: 33vh;
   height: 40vh;
   min-width: 200px;
   min-height: 300px;
   border-radius: 30px;
-  object-fit: cover;
-  object-position: 50% 20%;
-  /* padding: 5% 2% 2% 2% ; */
+  background-size: cover;
+  background-position: 50% 20%;
+  padding: 5% 2% 2% 2% ;
   margin: 2% 2% 2% 2%;
 }
 
@@ -271,9 +274,9 @@ h3 {
   min-width: 200px;
   min-height: 300px;
   border-radius: 30px;
-  object-fit: cover;
-  object-position: 50% 50%;
-  /* padding: 5% 2% 2% 2% ; */
+  background-size: auto;
+  background-position: 50% 20%;
+  padding: 5% 2% 2% 2% ;
   margin: 2% 2% 2% 2%;
 }
 
@@ -284,8 +287,8 @@ h3 {
   min-width: 200px;
   min-height: 300px;
   border-radius: 30px;
-  object-fit: cover;
-  object-position: 50% 50%;
+  background-size: cover;
+  background-position: 50% 50%;
   padding: 5% 2% 2% 2% ;
   margin: 2% 2% 2% 2%;
 }
@@ -297,8 +300,8 @@ h3 {
   min-width: 200px;
   min-height: 300px;
   border-radius: 30px;
-  object-fit: cover;
-  object-position: 50% 50%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 #topSpinImageContainer {
@@ -308,8 +311,8 @@ h3 {
   min-width: 200px;
   min-height: 300px;
   border-radius: 30px;
-  object-fit: cover;
-  object-position: 50% 50%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 #enterpriseImageContainer {
@@ -319,8 +322,8 @@ h3 {
   min-width: 200px;
   min-height: 300px;
   border-radius: 30px;
-  object-fit: cover;
-  object-position: 50% 50%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 #swingImageContainer {
@@ -330,8 +333,8 @@ h3 {
   min-width: 200px;
   min-height: 300px;
   border-radius: 30px;
-  object-fit: cover;
-  object-position: 50% 50%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .imageContainer {
@@ -345,8 +348,8 @@ h3 {
   min-width: 200px;
   min-height: 300px;
   border-radius: 30px;
-  object-fit: cover;
-  object-position: 50% 50%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 #fountainComplexImageContainer {
@@ -356,8 +359,8 @@ h3 {
   min-width: 200px;
   min-height: 300px;
   border-radius: 30px;
-  object-fit: cover;
-  object-position: 50% 50%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 #ringTossImageContainer {
@@ -367,8 +370,8 @@ h3 {
   min-width: 200px;
   min-height: 300px;
   border-radius: 30px;
-  object-fit: cover;
-  object-position: 50% 50%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 #balloonDartsImageContainer {
@@ -378,8 +381,8 @@ h3 {
   min-width: 200px;
   min-height: 300px;
   border-radius: 30px;
-  object-fit: cover;
-  object-position: 50% 50%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 #picnicsImageContainer {
@@ -389,8 +392,8 @@ h3 {
   min-width: 300px;
   min-height: 200px;
   border-radius: 30px;
-  object-fit: cover;
-  object-position: 50% 50%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 #arboretumImageContainer {
@@ -400,8 +403,8 @@ h3 {
   min-width: 300px;
   min-height: 200px;
   border-radius: 30px;
-  object-fit: cover;
-  object-position: 50% 50%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .container {
@@ -633,17 +636,18 @@ dl {
   padding: 0;
   margin: 0
 }
-dt {
+.container2 dt {
   float: left;
   width: 70%;
   padding: 0;
   margin: 0
 }
-dd {
+.container2 dd {
   float: left;
   width: 30%;
   padding: 0;
-  margin: 0
+  margin: 0;
+  font-family: "Roboto";
 }
 
 .contentUL ul {
@@ -653,4 +657,8 @@ dd {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+.numberCell {
+  font-family: "Roboto";
 }
