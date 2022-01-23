@@ -61,10 +61,10 @@
   font-weight: 600;
   height: 85px;
   padding: 0 10px;
-    
+
 }
 
-ul :hover {
+.nav ul :hover {
   box-shadow: 0 10px inset #240754;
 }
 
@@ -104,6 +104,7 @@ ul :hover {
 .hero__text__small {
   font-size: 36px;
 }
+
 h1 {
   padding: 0 0 5px;
   font-weight: 800;
@@ -111,21 +112,22 @@ h1 {
   text-align: center;
   color: #240754;
 }
+
 h2 {
+  font-weight: 800;
+  font-size: 36px;
+  text-align: center;
+  color: #240754;
+}
+
+h3 {
+  padding: 0 0 5px;
   font-weight: 800;
   font-size: 28px;
   text-align: center;
   color: #240754;
 }
 
-
-h3 {
-  padding: 0 0 5px;
-  font-weight: 800;
-  font-size: 36px;
-  text-align: center;
-  color: #240754;
-}
 
 .map,
 .legend {
@@ -181,45 +183,179 @@ h3 {
   box-shadow: 10px 5px 5px #00000080, 10px 5px 5px #ffff0050;
 }
 
-.ridesNavigationImage {
-  width: 420px;
-  height: 525px;
-  border-radius: 30px;
-  object-fit: cover;
+#ridesHeaderImage {
+  width: 100%;
+  max-width: 835px;
+  max-height: 235px;
+  height: auto;
+  border-radius: 70px;
 }
 
-.ridesImage {
-  width: 420px;
-  height: 525px;
+#attractionsImage {
+  background-image: url("../img/rides/navigationAttractions.jpg");
+  width: 33vh;
+  height: 40vh;
+  min-width: 200px;
+  min-height: 300px;
   border-radius: 30px;
   object-fit: cover;
+  object-position: 50% 50%;
 }
 
-.freeSpaceImage {
-  width: 420px;
-  height: 320px;
+#ridesImage {
+  background-image: url("../img/rides/navigationRides.jpg");
+  width: 33vh;
+  height: 40vh;
+  min-width: 200px;
+  min-height: 300px;
   border-radius: 30px;
   object-fit: cover;
+  object-position: 50% 50%;
 }
+
+#freeSpaceImage {
+  background-image: url("../img/rides/navigationFreeSpace.jpeg");
+  width: 33vh;
+  height: 40vh;
+  min-width: 200px;
+  min-height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#rollerCoasterImageContainer {
+  background-image: url("../img/rides/rollerCoaster.jpg");
+  width: 30vh;
+  height: 40vh;
+  min-width: 200px;
+  min-height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#topSpinImageContainer {
+  background-image: url("../img/rides/topSpin.jpg");
+  width: 30vh;
+  height: 40vh;
+  min-width: 200px;
+  min-height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#enterpriseImageContainer {
+  background-image: url("../img/rides/enterprise.jpg");
+  width: 30vh;
+  height: 40vh;
+  min-width: 200px;
+  min-height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#swingImageContainer {
+  background-image: url("../img/rides/swing.jpg");
+  width: 30vh;
+  height: 40vh;
+  min-width: 200px;
+  min-height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.imageContainer {
+  overflow: hidden;
+}
+
+#castlePlaygroundImageContainer {
+  background-image: url("../img/rides/castlePlayground.jpg");
+  width: 30vh;
+  height: 40vh;
+  min-width: 200px;
+  min-height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#fountainComplexImageContainer {
+  background-image: url("../img/rides/fountainComplex.jpg");
+  width: 30vh;
+  height: 40vh;
+  min-width: 200px;
+  min-height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#ringTossImageContainer {
+  background-image: url("../img/rides/ringToss.jpg");
+  width: 30vh;
+  height: 40vh;
+  min-width: 200px;
+  min-height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#balloonDartsImageContainer {
+  background-image: url("../img/rides/balloonDarts.jpg");
+  width: 30vh;
+  height: 40vh;
+  min-width: 200px;
+  min-height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#picnicsImageContainer {
+  background-image: url("../img/rides/picnics.jpg");
+  width: 40vh;
+  height: 30vh;
+  min-width: 300px;
+  min-height: 200px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#arboretumImageContainer {
+  background-image: url("../img/rides/arboretum.jpg");
+  width: 40vh;
+  height: 30vh;
+  min-width: 300px;
+  min-height: 200px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
 .container {
   vertical-align: center;
-  margin: 2% 2% 2%;
-  padding: 2% 0px;  
+  padding: 2% 2% 2% 2% ;
   text-align: center;
   background-color: white;
   box-shadow: 10px 5px 5px #00000080;
-  outline: solid #a081d9; 
-  border-radius: 30px;   
+  outline: solid #a081d9;
+  border-radius: 30px;
 }
 
 .container2 {
   vertical-align: center;
-  padding:3%;
-  margin: 5% 5%;  
-  text-align: center;
+  padding:2% 2% 2% 2% ;
+  margin: 5% 5%;
+  text-align: left;
   background-color: white;
-  border-radius: 30px; 
-  font-size: 28px;
+  border-radius: 30px;
+  font-size: 20px;
   font-weight: 500;
   color: #240754;
 }
@@ -227,155 +363,19 @@ h3 {
 .container3 {
   vertical-align: center;
   padding: 3%;
-  margin: 10% 0;  
+  margin: 10% 0;
   text-align: left;
   background-color: white;
-  border-radius: 30px; 
+  border-radius: 30px;
   font-size: 28px;
   font-weight: 500;
   color: #240754;
 }
-.rides {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 36px;
-  color: #240754; 
-}
 
-.attractions {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 36px;
-  color: #240754; 
+.freespaceContainer {
+  padding: 2% 2% 2% 2% ;
+  margin: 2% 2% 2% 2%;
 }
-
-.freeSpace {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 36px;
-  color: #240754; 
-}
-
-.coaster {
-  text-decoration: none;
-  display: flex;
-  font-weight: 600;
-  font-size: 28px;
-  color: #240754;
-  position: absolute;
-  top: 65%;
-  left: 45.5%;
-  
-}
-
-.topSpin {
-  text-decoration: none;
-  display: flex;
-  font-weight: 600;
-  font-size: 28px;
-  color: #240754;
-  position: absolute;
-  text-align: center;
-  top: 70%;
-  left: 47%;
-  
-}
-
-.enterprise {
-  text-decoration: none;
-  display: flex;
-  font-weight: 600;
-  font-size: 28px;
-  color: #240754;
-  position: absolute;
-  top: 95%;
-  left: 46%;
-  
-}
-
-.swing {
-  text-decoration: none;
-  display: flex;
-  font-weight: 600;
-  font-size: 28px;
-  color: #240754;
-  position: absolute;
-  top: 100%;
-  left: 44.5%;
-  
-}
-
-.picnic {
-  text-decoration: none;
-  display: flex;
-  font-weight: 600;
-  font-size: 28px;
-  color: #240754;
-  position: absolute;
-  top: 60%;
-  left: 74.5%;
-  
-}
-
-.arbor {
-  text-decoration: none;
-  display: flex;
-  font-weight: 600;
-  font-size: 28px;
-  color: #240754;
-  position: absolute;
-  top: 65%;
-  left: 78.2%;
-  
-}
-
-.castle {
-  text-decoration: none;
-  display: flex;
-  font-weight: 600;
-  font-size: 28px;
-  color: #240754;
-  position: absolute;
-  top: 60%;
-  left: 12%;
-  
-}
-
-.fountain{
-  text-decoration: none;
-  display: flex;
-  font-weight: 600;
-  font-size: 28px;
-  color: #240754;
-  position: absolute;
-  top: 65%;
-  left: 12%;
-  
-}
-.ring {
-  text-decoration: none;
-  display: flex;
-  font-weight: 600;
-  font-size: 28px;
-  color: #240754;
-  position: absolute;
-  top: 70%;
-  left: 10%;
-  
-}
-
-.balloon {
-  text-decoration: none;
-  display: flex;
-  font-weight: 600;
-  font-size: 28px;
-  color: #240754;
-  position: absolute;
-  top: 70%;
-  left: 18%;
-  
-}
-
 
 .orangeBackground {
     background: rgba(248, 106, 106, 0.2);
@@ -385,16 +385,12 @@ h3 {
     background: rgba(114, 75, 183, 0.2);
 }
 
-.roundedCorners70 {
-  border-radius: 70px
-}
-
-.column {
+/* .column {
   margin: 0px 0px 0px;
   float: left;
   vertical-align: center;
   width: 33.33%;
-    
+
 }
 
 .column2 {
@@ -402,7 +398,7 @@ h3 {
   vertical-align: center;
   width: 25%;
   padding: 0 0 5%;
-    
+
 }
 
 .column3 {
@@ -410,8 +406,8 @@ h3 {
   vertical-align: center;
   width: 50%;
   padding: 0 0 5%;
-    
-}
+
+} */
 
 
 .row::after {
@@ -420,12 +416,45 @@ h3 {
   display: flex;
 }
 
-.triangleRight {
-  float: left;
-  margin-left: 15px;
-  height: 0;
-  border-top: 15px solid transparent;
-  border-left: 30px solid #240754;
-  border-bottom: 15px solid transparent;
+#triangleContainer {
+display: inline-flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-start;
 }
 
+.triangleRight {
+  height: 0;
+  width: 0;
+  border-top: 10px solid transparent;
+  border-left: 12px solid #240754;
+  border-bottom: 10px solid transparent;
+}
+
+dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0
+}
+dt {
+  float: left;
+  width: 70%;
+  padding: 0;
+  margin: 0
+}
+dd {
+  float: left;
+  width: 30%;
+  padding: 0;
+  margin: 0
+}
+
+.contentUL ul {
+  margin-left: 2vh;
+  padding-right: 2vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
