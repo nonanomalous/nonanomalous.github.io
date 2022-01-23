@@ -50,18 +50,70 @@
   padding-top: 65px;
 }
 
-.footnav{
-  display: flex;
+.footnav {
   justify-content: left;
+  margin-top: 50px;
 }
+
+.footnav li {
+  list-style-type: none;
+}
+
 .foot_link {
   text-decoration: none;
   color: #240754;
   font-size: 16px;
   font-weight: 600;
-  height: 85px;
+  /* height: 85px; */
   padding: 0 10px;
+}
 
+.footnav dl {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 30% 0 100px;
+}
+
+.foot_link_container {
+  padding: 10px;
+  width: 200px;
+}
+
+.foot_link_container:hover {
+  background-color: #a081d9;
+}
+
+.footer__end {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 50px 75px;
+}
+
+.socialContainer {
+  display: flex;
+}
+
+.socialIcon {
+  margin: 0 20px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.socialIcon svg {
+  fill: #240754;
+}
+
+.socialIcon:hover {
+  background-color: #a081d9;
+  cursor: pointer;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
 
 .nav ul :hover {
@@ -183,6 +235,14 @@ h3 {
   box-shadow: 10px 5px 5px #00000080, 10px 5px 5px #ffff0050;
 }
 
+.bg-image {
+  position:relative;
+  overflow:hidden;
+  background-repeat:no-repeat;
+  background-size:cover;
+  /* background-position:50% */
+}
+
 #ridesHeaderImage {
   width: 100%;
   max-width: 835px;
@@ -192,14 +252,16 @@ h3 {
 }
 
 #attractionsImage {
-  background-image: url("../img/rides/navigationAttractions.jpg");
+  /* background-image: url("../img/rides/navigationAttractions.jpg"); */
   width: 33vh;
   height: 40vh;
   min-width: 200px;
   min-height: 300px;
   border-radius: 30px;
   object-fit: cover;
-  object-position: 50% 50%;
+  object-position: 50% 20%;
+  /* padding: 5% 2% 2% 2% ; */
+  margin: 2% 2% 2% 2%;
 }
 
 #ridesImage {
@@ -211,6 +273,8 @@ h3 {
   border-radius: 30px;
   object-fit: cover;
   object-position: 50% 50%;
+  /* padding: 5% 2% 2% 2% ; */
+  margin: 2% 2% 2% 2%;
 }
 
 #freeSpaceImage {
@@ -222,6 +286,8 @@ h3 {
   border-radius: 30px;
   object-fit: cover;
   object-position: 50% 50%;
+  padding: 5% 2% 2% 2% ;
+  margin: 2% 2% 2% 2%;
 }
 
 #rollerCoasterImageContainer {
@@ -269,7 +335,7 @@ h3 {
 }
 
 .imageContainer {
-  overflow: hidden;
+  position: relative;
 }
 
 #castlePlaygroundImageContainer {
@@ -409,6 +475,136 @@ h3 {
 
 } */
 
+.rides {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 36px;
+  color: #240754;
+}
+
+.attractions {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 36px;
+  color: #240754;
+}
+
+.freeSpace {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 36px;
+  color: #240754;
+}
+
+.coaster {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+}
+
+.topSpin {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+}
+
+.enterprise {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+}
+
+.swing {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+}
+
+.picnic {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+}
+
+.arbor {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+}
+
+.castle {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+}
+
+.fountain{
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+}
+
+.ring {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+}
+
+.balloon {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 600;
+  font-size: 28px;
+  color: #240754;
+}
 
 .row::after {
   content: "";
