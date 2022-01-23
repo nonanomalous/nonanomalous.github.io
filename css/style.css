@@ -5,13 +5,17 @@
 
 @font-face {
   font-family: "Roboto";
-  src:url("../fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: "Raleway";
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .header {
@@ -185,7 +189,6 @@ h3 {
   color: #240754;
 }
 
-
 .map,
 .legend {
   display: inline-block;
@@ -241,9 +244,9 @@ h3 {
 }
 
 .bg-image {
-  position:relative;
-  overflow:hidden;
-  background-repeat:no-repeat;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
 }
 
 #ridesHeaderImage {
@@ -263,7 +266,7 @@ h3 {
   border-radius: 30px;
   background-size: cover;
   background-position: 50% 20%;
-  padding: 5% 2% 2% 2% ;
+  padding: 5% 2% 2% 2%;
   margin: 2% 2% 2% 2%;
 }
 
@@ -276,7 +279,7 @@ h3 {
   border-radius: 30px;
   background-size: auto;
   background-position: 50% 20%;
-  padding: 5% 2% 2% 2% ;
+  padding: 5% 2% 2% 2%;
   margin: 2% 2% 2% 2%;
 }
 
@@ -289,7 +292,7 @@ h3 {
   border-radius: 30px;
   background-size: cover;
   background-position: 50% 50%;
-  padding: 5% 2% 2% 2% ;
+  padding: 5% 2% 2% 2%;
   margin: 2% 2% 2% 2%;
 }
 
@@ -409,7 +412,7 @@ h3 {
 
 .container {
   vertical-align: center;
-  padding: 2% 2% 2% 2% ;
+  padding: 2% 2% 2% 2%;
   text-align: center;
   background-color: white;
   box-shadow: 10px 5px 5px #00000080;
@@ -419,7 +422,7 @@ h3 {
 
 .container2 {
   vertical-align: center;
-  padding:2% 2% 2% 2% ;
+  padding: 2% 2% 2% 2%;
   margin: 5% 5%;
   text-align: left;
   background-color: white;
@@ -442,16 +445,16 @@ h3 {
 }
 
 .freespaceContainer {
-  padding: 2% 2% 2% 2% ;
+  padding: 2% 2% 2% 2%;
   margin: 2% 2% 2% 2%;
 }
 
 .orangeBackground {
-    background: rgba(248, 106, 106, 0.2);
+  background: rgba(248, 106, 106, 0.2);
 }
 
 .violetBackground {
-    background: rgba(114, 75, 183, 0.2);
+  background: rgba(114, 75, 183, 0.2);
 }
 
 /* .column {
@@ -576,7 +579,7 @@ h3 {
   color: #240754;
 }
 
-.fountain{
+.fountain {
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -616,10 +619,10 @@ h3 {
 }
 
 #triangleContainer {
-display: inline-flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: flex-start;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .triangleRight {
@@ -634,13 +637,13 @@ dl {
   width: 100%;
   overflow: hidden;
   padding: 0;
-  margin: 0
+  margin: 0;
 }
 .container2 dt {
   float: left;
   width: 70%;
   padding: 0;
-  margin: 0
+  margin: 0;
 }
 .container2 dd {
   float: left;
