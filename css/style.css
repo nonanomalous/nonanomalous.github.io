@@ -16,6 +16,9 @@
 
 body {
   overflow-x: hidden;
+
+li {
+  list-style-type: none;
 }
 
 .header {
@@ -37,7 +40,6 @@ body {
 }
 
 .header li {
-  list-style-type: none;
   padding: 0 20px;
   margin: 0 40px;
   height: 85px;
@@ -412,7 +414,8 @@ h3 {
 
 .container {
   vertical-align: center;
-  padding: 2% 2% 2% 2%;
+  margin: 2% 2% 2%;
+  padding: 2% 0px;
   text-align: center;
   background-color: white;
   box-shadow: 10px 5px 5px #00000080;
@@ -422,12 +425,12 @@ h3 {
 
 .container2 {
   vertical-align: center;
-  padding: 2% 2% 2% 2%;
+  padding: 3%;
   margin: 5% 5%;
-  text-align: left;
+  text-align: center;
   background-color: white;
   border-radius: 30px;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 500;
   color: #240754;
 }
@@ -511,6 +514,9 @@ h3 {
   font-weight: 600;
   font-size: 28px;
   color: #240754;
+  position: absolute;
+  top: 65%;
+  left: 45.5%;
 }
 
 .topSpin {
@@ -522,6 +528,10 @@ h3 {
   font-weight: 600;
   font-size: 28px;
   color: #240754;
+  position: absolute;
+  text-align: center;
+  top: 70%;
+  left: 47%;
 }
 
 .enterprise {
@@ -533,6 +543,9 @@ h3 {
   font-weight: 600;
   font-size: 28px;
   color: #240754;
+  position: absolute;
+  top: 95%;
+  left: 46%;
 }
 
 .swing {
@@ -544,6 +557,9 @@ h3 {
   font-weight: 600;
   font-size: 28px;
   color: #240754;
+  position: absolute;
+  top: 100%;
+  left: 44.5%;
 }
 
 .picnic {
@@ -555,6 +571,9 @@ h3 {
   font-weight: 600;
   font-size: 28px;
   color: #240754;
+  position: absolute;
+  top: 60%;
+  left: 74.5%;
 }
 
 .arbor {
@@ -566,6 +585,9 @@ h3 {
   font-weight: 600;
   font-size: 28px;
   color: #240754;
+  position: absolute;
+  top: 65%;
+  left: 78.2%;
 }
 
 .castle {
@@ -577,6 +599,9 @@ h3 {
   font-weight: 600;
   font-size: 28px;
   color: #240754;
+  position: absolute;
+  top: 60%;
+  left: 12%;
 }
 
 .fountain {
@@ -588,6 +613,9 @@ h3 {
   font-weight: 600;
   font-size: 28px;
   color: #240754;
+  position: absolute;
+  top: 65%;
+  left: 12%;
 }
 
 .ring {
@@ -599,6 +627,9 @@ h3 {
   font-weight: 600;
   font-size: 28px;
   color: #240754;
+  position: absolute;
+  top: 70%;
+  left: 10%;
 }
 
 .balloon {
@@ -638,12 +669,39 @@ dl {
   overflow: hidden;
   padding: 0;
   margin: 0;
+=======
+  position: absolute;
+  top: 70%;
+  left: 18%;
+}
+
+.orangeBackground {
+  background: rgba(248, 106, 106, 0.2);
+}
+
+.violetBackground {
+  background: rgba(114, 75, 183, 0.2);
+}
+
+.roundedCorners70 {
+  border-radius: 70px;
+}
+
+.column {
+  margin: 0px 0px 0px;
+  float: left;
+  vertical-align: center;
+  width: 33.33%;
+
 }
 .container2 dt {
   float: left;
   width: 70%;
   padding: 0;
   margin: 0;
+  vertical-align: center;
+  width: 25%;
+  padding: 0 0 5%;
 }
 .container2 dd {
   float: left;
@@ -656,6 +714,14 @@ dl {
 .contentUL ul {
   margin-left: 2vh;
   padding-right: 2vh;
+  vertical-align: center;
+  width: 50%;
+  padding: 0 0 5%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -664,4 +730,52 @@ dl {
 
 .numberCell {
   font-family: "Roboto";
+}
+
+.footnav dl {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 30% 0 100px;
+}
+
+.foot_link_container {
+  padding: 10px;
+  width: 200px;
+}
+
+.foot_link_container:hover {
+  background-color: #a081d9;
+}
+
+.footer__end {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 50px 75px;
+}
+
+.socialContainer {
+  display: flex;
+}
+
+.socialIcon {
+  margin: 0 20px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.socialIcon svg {
+  fill: #240754;
+}
+
+.socialIcon:hover {
+  background-color: #a081d9;
+  cursor: pointer;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
