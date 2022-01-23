@@ -1,0 +1,664 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-VariableFont_wght.ttf");
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src:url("../fonts/Roboto-Regular.ttf");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+  }
+  
+  .header {
+    display: flex;
+    margin: 0 150px;
+    height: 85px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: right;
+  }
+  
+  .header li {
+    list-style-type: none;
+    padding: 0 20px;
+    margin: 0 40px;
+    height: 85px;
+    align-items: center;
+    display: flex;
+  }
+  
+  .header_logo {
+    height: 60px;
+    width: auto;
+  }
+  
+  .nav_link {
+    text-decoration: none;
+    color: #240754;
+    font-size: 18px;
+    font-weight: 600;
+    height: 85px;
+    padding-top: 65px;
+  }
+  
+  .footnav {
+    justify-content: left;
+    margin-top: 50px;
+  }
+  
+  .footnav li {
+    list-style-type: none;
+  }
+  
+  .foot_link {
+    text-decoration: none;
+    color: #240754;
+    font-size: 16px;
+    font-weight: 600;
+    /* height: 85px; */
+    padding: 0 10px;
+  }
+  
+  .footnav dl {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 30% 0 100px;
+  }
+  
+  .foot_link_container {
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .foot_link_container:hover {
+    background-color: #a081d9;
+  }
+  
+  .footer__end {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 50px 75px;
+  }
+  
+  .socialContainer {
+    display: flex;
+  }
+  
+  .socialIcon {
+    margin: 0 20px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .socialIcon svg {
+    fill: #240754;
+  }
+  
+  .socialIcon:hover {
+    background-color: #a081d9;
+    cursor: pointer;
+  }
+  
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  }
+  
+  .nav ul :hover {
+    box-shadow: 0 10px inset #240754;
+  }
+  
+  .nav_button {
+    margin: 15px 0px 15px 40px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f86a6a;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .hero {
+    height: 995px;
+    background: url("/img/park_banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .hero__text__large,
+  .hero__text__small {
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+    filter: drop-shadow(0px 0px 4px #00000080);
+  }
+  
+  .hero__text__large {
+    padding: 10% 0 10px;
+    font-size: 64px;
+  }
+  
+  .hero__text__small {
+    font-size: 36px;
+  }
+  
+  h1 {
+    padding: 0 0 5px;
+    font-weight: 800;
+    font-size: 44px;
+    text-align: center;
+    color: #240754;
+  }
+  
+  h2 {
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #240754;
+  }
+  
+  h3 {
+    padding: 0 0 5px;
+    font-weight: 800;
+    font-size: 28px;
+    text-align: center;
+    color: #240754;
+  }
+  
+  
+  .map,
+  .legend {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 20px;
+  }
+  
+  .border {
+    margin: 10px 0 20px;
+    border: 1px solid #653cad;
+  }
+  
+  .map {
+    margin: 0 5% 0;
+    width: 60%;
+  }
+  
+  .legend {
+    width: 25%;
+  }
+  
+  .maplabel {
+    display: inline-block;
+    margin: 0 15px;
+    width: 1.3em;
+    height: 1.3em;
+    line-height: 1.3em;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: center;
+    background-color: #ef4e4e;
+    color: white;
+  }
+  
+  .legend li {
+    list-style-type: none;
+    margin: 10px 5px;
+    vertical-align: center;
+    padding: 10px 0;
+    background-color: #eae2f8;
+    color: #724bb7;
+    font-weight: 800;
+    font-size: 24px;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #00000080;
+  }
+  
+  .legend li:hover {
+    background-color: #a081d9;
+    color: white;
+    cursor: pointer;
+    box-shadow: 10px 5px 5px #00000080, 10px 5px 5px #ffff0050;
+  }
+  
+  .bg-image {
+    position:relative;
+    overflow:hidden;
+    background-repeat:no-repeat;
+  }
+  
+  #ridesHeaderImage {
+    width: 100%;
+    max-width: 835px;
+    max-height: 235px;
+    height: auto;
+    border-radius: 70px;
+  }
+  
+  #attractionsImage {
+    background-image: url("../img/rides/navigationAttractions.jpg");
+    width: 33vh;
+    height: 40vh;
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: 50% 20%;
+    padding: 5% 2% 2% 2% ;
+    margin: 2% 2% 2% 2%;
+  }
+  
+  #ridesImage {
+    background-image: url("../img/rides/navigationRides.jpg");
+    width: 33vh;
+    height: 40vh;
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 30px;
+    background-size: auto;
+    background-position: 50% 20%;
+    padding: 5% 2% 2% 2% ;
+    margin: 2% 2% 2% 2%;
+  }
+  
+  #freeSpaceImage {
+    background-image: url("../img/rides/navigationFreeSpace.jpeg");
+    width: 33vh;
+    height: 40vh;
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 5% 2% 2% 2% ;
+    margin: 2% 2% 2% 2%;
+  }
+  
+  #rollerCoasterImageContainer {
+    background-image: url("../img/rides/rollerCoaster.jpg");
+    width: 30vh;
+    height: 40vh;
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  #topSpinImageContainer {
+    background-image: url("../img/rides/topSpin.jpg");
+    width: 30vh;
+    height: 40vh;
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  #enterpriseImageContainer {
+    background-image: url("../img/rides/enterprise.jpg");
+    width: 30vh;
+    height: 40vh;
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  #swingImageContainer {
+    background-image: url("../img/rides/swing.jpg");
+    width: 30vh;
+    height: 40vh;
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .imageContainer {
+    position: relative;
+  }
+  
+  #castlePlaygroundImageContainer {
+    background-image: url("../img/rides/castlePlayground.jpg");
+    width: 30vh;
+    height: 40vh;
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  #fountainComplexImageContainer {
+    background-image: url("../img/rides/fountainComplex.jpg");
+    width: 30vh;
+    height: 40vh;
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  #ringTossImageContainer {
+    background-image: url("../img/rides/ringToss.jpg");
+    width: 30vh;
+    height: 40vh;
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  #balloonDartsImageContainer {
+    background-image: url("../img/rides/balloonDarts.jpg");
+    width: 30vh;
+    height: 40vh;
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  #picnicsImageContainer {
+    background-image: url("../img/rides/picnics.jpg");
+    width: 40vh;
+    height: 30vh;
+    min-width: 300px;
+    min-height: 200px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  #arboretumImageContainer {
+    background-image: url("../img/rides/arboretum.jpg");
+    width: 40vh;
+    height: 30vh;
+    min-width: 300px;
+    min-height: 200px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .container {
+    vertical-align: center;
+    padding: 2% 2% 2% 2% ;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 5px 5px #00000080;
+    outline: solid #a081d9;
+    border-radius: 30px;
+  }
+  
+  .container2 {
+    vertical-align: center;
+    padding:2% 2% 2% 2% ;
+    margin: 5% 5%;
+    text-align: left;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #240754;
+  }
+  
+  .container3 {
+    vertical-align: center;
+    padding: 3%;
+    margin: 10% 0;
+    text-align: left;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #240754;
+  }
+  
+  .freespaceContainer {
+    padding: 2% 2% 2% 2% ;
+    margin: 2% 2% 2% 2%;
+  }
+  
+  .orangeBackground {
+      background: rgba(248, 106, 106, 0.2);
+  }
+  
+  .violetBackground {
+      background: rgba(114, 75, 183, 0.2);
+  }
+  
+  /* .column {
+    margin: 0px 0px 0px;
+    float: left;
+    vertical-align: center;
+    width: 33.33%;
+  
+  }
+  
+  .column2 {
+    float: left;
+    vertical-align: center;
+    width: 25%;
+    padding: 0 0 5%;
+  
+  }
+  
+  .column3 {
+    float: left;
+    vertical-align: center;
+    width: 50%;
+    padding: 0 0 5%;
+  
+  } */
+  
+  .rides {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 36px;
+    color: #240754;
+  }
+  
+  .attractions {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 36px;
+    color: #240754;
+  }
+  
+  .freeSpace {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 36px;
+    color: #240754;
+  }
+  
+  .coaster {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 28px;
+    color: #240754;
+  }
+  
+  .topSpin {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 28px;
+    color: #240754;
+  }
+  
+  .enterprise {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 28px;
+    color: #240754;
+  }
+  
+  .swing {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 28px;
+    color: #240754;
+  }
+  
+  .picnic {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 28px;
+    color: #240754;
+  }
+  
+  .arbor {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 28px;
+    color: #240754;
+  }
+  
+  .castle {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 28px;
+    color: #240754;
+  }
+  
+  .fountain{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 28px;
+    color: #240754;
+  }
+  
+  .ring {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 28px;
+    color: #240754;
+  }
+  
+  .balloon {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 28px;
+    color: #240754;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: flex;
+  }
+  
+  #triangleContainer {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  }
+  
+  .triangleRight {
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-left: 12px solid #240754;
+    border-bottom: 10px solid transparent;
+  }
+  
+  dl {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0
+  }
+  .container2 dt {
+    float: left;
+    width: 70%;
+    padding: 0;
+    margin: 0
+  }
+  .container2 dd {
+    float: left;
+    width: 30%;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+  }
+  
+  .contentUL ul {
+    margin-left: 2vh;
+    padding-right: 2vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .numberCell {
+    font-family: "Roboto";
+  }
