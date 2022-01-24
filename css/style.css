@@ -20,6 +20,7 @@
   --purple-1000: #240754;
 }
 
+/* media queries inspired by bootstrap */
 @media (max-width: 575.98px) {
   nav {
     margin: 0 !important;
@@ -68,7 +69,8 @@
   .legend {
     width: 100% !important;
   }
-  h3 {
+  .legend h3,
+  .map h3 {
     display: none;
   }
 }
