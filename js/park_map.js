@@ -7,6 +7,7 @@ var ride_images = {};
 const legend_items = {
   A: {
     name: "Roller Coaster",
+    link: "/rides.html#castleID",
     img: "img/rides/rollerCoaster.jpg",
     type: "Ride",
     color: "#EF4E4E",
@@ -15,6 +16,7 @@ const legend_items = {
   },
   B: {
     name: "Top Spin",
+    link: "/rides.html#topSpinID",
     img: "img/rides/topSpin.jpg",
     type: "Ride",
     color: "#EF4E4E",
@@ -23,6 +25,7 @@ const legend_items = {
   },
   C: {
     name: "Enterprise",
+    link: "/rides.html#enterpriseID",
     img: "img/rides/enterprise.jpg",
     type: "Ride",
     color: "#EF4E4E",
@@ -31,6 +34,7 @@ const legend_items = {
   },
   D: {
     name: "Swing Carousel",
+    link: "/rides.html#swingID",
     img: "img/rides/swing.jpg",
     type: "Ride",
     color: "#EF4E4E",
@@ -39,6 +43,7 @@ const legend_items = {
   },
   E: {
     name: "Jungle Adventure",
+    link: "#",
     img: "img/rides/jungle.jfif",
     type: "Ride",
     color: "#EF4E4E",
@@ -47,6 +52,7 @@ const legend_items = {
   },
   F: {
     name: "Castle Playground",
+    link: "/rides.html#castleID",
     img: "img/rides/castlePlayground.jpg",
     type: "Attraction",
     color: "#724BB7",
@@ -55,6 +61,7 @@ const legend_items = {
   },
   G: {
     name: "Fountain Complex",
+    link: "/rides.html#fountainID",
     img: "img/rides/fountainComplex.jpg",
     type: "Attraction",
     color: "#724BB7",
@@ -63,6 +70,7 @@ const legend_items = {
   },
   H: {
     name: "Ring Toss",
+    link: "/rides.html#ringID",
     img: "img/rides/ringToss.jpg",
     type: "Attraction",
     color: "#724BB7",
@@ -71,6 +79,7 @@ const legend_items = {
   },
   I: {
     name: "Balloon Darts",
+    link: "/rides.html#balloonID",
     img: "img/rides/balloonDarts.jpg",
     type: "Attraction",
     color: "#724BB7",
@@ -79,6 +88,7 @@ const legend_items = {
   },
   J: {
     name: "The Theatre",
+    link: "#",
     img: "img/rides/theatre.jpg",
     type: "Attraction",
     color: "#724BB7",
@@ -86,7 +96,8 @@ const legend_items = {
     y: 1079,
   },
   K: {
-    name: "Free Space",
+    name: "Picnic and BBQ Zones",
+    link: "/rides.html#picnicID",
     img: "img/rides/navigationFreeSpace.jpeg",
     type: "Attraction",
     color: "#829AB1",
@@ -95,6 +106,7 @@ const legend_items = {
   },
   L: {
     name: "Arboretum",
+    link: "/rides.html#arborID",
     img: "img/rides/arboretum.jpg",
     type: "Attraction",
     color: "#829AB1",
@@ -200,9 +212,9 @@ let constrain = (floor, value, ceiling) => {
 
 const fillLegend = () => {
   const legend_ul = document.querySelector(".legend > ul");
-  Object.entries(legend_items).forEach(([letter, { name, color }]) => {
+  Object.entries(legend_items).forEach(([letter, { name, link, color }]) => {
     let li = document.createElement("li");
-    li.innerHTML = `<span class="maplabel" style="background-color:${color}">${letter}</span>${name}`;
+    li.innerHTML = `<a href="${link}"><span class="maplabel" style="background-color:${color}">${letter}</span>${name}</a>`;
     legend_ul.appendChild(li);
   });
 };
